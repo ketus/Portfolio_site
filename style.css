@@ -1,0 +1,145 @@
+img {
+  margin: 0 5px 20px 5px;
+}
+
+.about {
+  background: rgb(105,155,200);
+background: -moz-radial-gradient(top left, ellipse cover, rgba(105,155,200,0.7) 0%, rgba(181,197,216,0.7) 57%);
+ background: -webkit-gradient(radial, top left, 0px, top left, 100%, color-stop(0%,rgba(105,155,200,0.7)), color-stop(57%,rgba(181,197,216,0.7)));
+ background: -webkit-radial-gradient(top left, ellipse cover, rgba(105,155,200,0.7) 0%,rgba(181,197,216,0.7) 57%);
+ background: -o-radial-gradient(top left, ellipse cover, rgba(105,155,200,0.7) 0%,rgba(181,197,216,0.7) 57%);
+ background: -ms-radial-gradient(top left, ellipse cover, rgba(105,155,200,0.7) 0%,rgba(181,197,216,0.7) 57%);
+ background: radial-gradient(ellipse at top left, rgba(105,155,200,0.7) 0%,rgba(181,197,216,0.7) 57%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#699bc8', endColorstr='#b5c5d8',GradientType=1 );
+  
+  padding: 15px;
+  margin: 0 0 40px 0;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);  
+}
+.about > h3 {
+  color: #000;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 200%;
+  text-shadow: 0px 1px 1px #4d4d4d;	
+}
+
+.about > span  {  
+  color: #000;
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 0px 1px 1px #4d4d4d;	
+  font-size: 12pt;  
+  letter-spacing: 0.1em;
+}
+
+.selfie { 
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.jumbotron {  
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.overlay {
+  padding-top: 70px;
+  background: rgba(0,0,0, 0.3);
+  height: auto;
+}
+
+.topnav {
+  box-shadow: 0 3px 20px 3px #000;
+}
+
+.nav-text {
+  text-shadow: black 2px 2px 3px;
+}
+
+.promo-content > h1 {
+  margin-top: 11%;
+  text-align: center;  
+  color: #FFF;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 1px #000,  1px 3px 6px #000;
+  font-size: 4em;
+}
+
+.promo-content > h3 {  
+  text-align: center;  
+  color: rgba(255,255,255, 0.9);
+  text-shadow: 1px 1px 2px #000;
+  font-size: 2em;
+}
+
+.promo-separator {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 3px black;
+  text-align: center;
+  width: 90%
+}
+
+.social {
+  color: #000;
+  display: inline-block;
+  background-color: #C0C0C0;
+  border: 2px outset rgba(0,0,0, 1);  
+  margin: 0 10px 10px 10px;
+  text-shadow: 1px 1px 3px #000;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 15px #000; 
+  box-shadow: -2px -2px 15px #000;
+  text-align: center;
+}
+.social:hover {
+  color: #fff;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: rgba(0,0,0, 0.9);
+  transform:scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);  
+}
+
+.promo-bgd {
+  background-size: cover;
+  padding-top: 50px;
+  background: 
+    url(http://www.citiworldedu.com/wp-content/uploads/2012/09/download.jpg) center 100% no-repeat fixed;  
+}
+
+.about-bgd {
+  background-position: right top;
+  background: url(http://thenextweb.com/wp-content/blogs.dir/1/files/2014/10/laptop-color-design.jpg) no-repeat fixed;  
+  background-size: cover;
+}
+
+.portfolio-bgd {
+  min-height: 500px;
+  background-position: right;
+  background: url(http://www.rgstudiodesigns.com/wp-content/uploads/2014/02/hd-wallpapers-color-splash-creative-graphic-design-wallpaper-desktop-1600x900-wallpaper.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+.contact-bgd {
+  min-height: 500px;
+  background-position: right;
+  background: url(http://loungemagazyn.pl/wp-content/uploads/2015/04/Modern-Zen-Design-House-13.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: .8em;
+  height: 80px;
+  background: #C0C0C0;
+}
+
+.lefty {
+  float: left;
+}
+
+.righty {
+  float: right;
+}
