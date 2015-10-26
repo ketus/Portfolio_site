@@ -1,54 +1,114 @@
 doctype 5
 html
-   body
-      .container
-         .row
-            .col-md-12
-               nav.navbar.navbar-default(role='navigation')
-                  .col-md-12
-                     .navbar-header
-                        a.navbar-brand(href='#') My Portfolio
-                     ul.nav.navbar-nav.navbar-right
-                        li
-                           a(href='#') Link
-                        li
-                           a(href='#') Link
-                        li
-                           a(href='#') Link
-         .jumbotron
-            h2 My name				
-            p
-               | I'm a 
-               a(href='http://freecodecamp.com/', target='_blank') coder
-               | .
-         .row
-            .col-md-4
-               h2 						Heading					
-               img.img-responsive(src='http://i.imgur.com/jESF2.jpg')
-               p
-                  | Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-            .col-md-4
-               h2 						Heading					
-               img.img-responsive(src='http://i.imgur.com/jESF2.jpg')
-               p
-                  | Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-            .col-md-4
-               h2 						Heading					
-               img.img-responsive(src='http://i.imgur.com/jESF2.jpg')
-               p
-                  | Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-         .jumbotron
-            h2.text-center Contact me
+    body(data-spy='scroll' data-target='.navbar' data-offset='50')
+        .container
+            .nav.navbar.navbar-inverse.navbar-fixed-top.topnav(role='navigation')
+                .container
+                    .navbar-header
+                        a.navbar-brand(href='http://freecodecamp.com/ketus') Maciej Oleksa
+                        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                        ul.nav-text.nav.navbar-nav.navbar-right
+                            li
+                                a(href='#home')
+                                    span.glyphicon.glyphicon-home
+                                    |  Home
+                            li
+                                a(href='#about')
+                                    span.glyphicon.glyphicon-fire
+                                    |  About
+                            li
+                                a(href='#portfolio')
+                                    span.glyphicon.glyphicon-tasks
+                                    |  Portfolio
+                            li
+                                a(href='#contact')
+                                    span.glyphicon.glyphicon-envelope
+                                    |  Contact
+        #home.promo-bgd
+            .overlay
+                .container
+                    .row
+                        .col-md-12
+                            .promo-content(style='text-align: center;padding-bottom: 200px;')
+                                h1 Twisted Design Studio
+                                h3 Explore beautifully
+                                hr.promo-separator
+                                a(href='http://freecodecamp.com/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                    i.fa.fa-fire
+                                    |  FreeCodeCamp
+                                a(href='https://github.com/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                    i.fa.fa-github
+                                    |  GitHub
+                                a(href='https://pl.linkedin.com/pub/maciej-oleksa/77/710/aba' target='_blank').btn.btn-lg.btn-default.social
+                                    i.fa.fa-linkedin
+                                    |  LinkedIn
+                                a(href='https://twitter.com/m_ketus' target='_blank').btn.btn-lg.btn-default.social
+                                    i.fa.fa-twitter
+                                    |  Twitter
+                                a(href='http://www.codewars.com/users/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                    i.fa.fa-desktop
+                                    |  Code Wars
+        #about.about-bgd
+            .overlay(style='padding: 150px 0;')
+                .container
+                    .row
+                        .col-md-8
+                            .about
+                                h3.text-center About Maciej
+                                span I'm self-thought Web and mobile developer, committed, constant learner, on my way into this great industry. I enjoy discovering new technologies, and making most of them. After fiddling with C#, .NET and Java EE I found javascript, Node.js and how awesome they are. I'm never going back.
+                        .col-md-4
+                            img(src='https://pbs.twimg.com/profile_images/658331877967855616/hLMikwn-_400x400.jpg').img-responsive.center-block.selfie
+        #portfolio.portfolio-bgd
+            .overlay(style='padding: 20px 0 150px 0;')
+                .container
+                    .promo-content
+                        h1 Portfolio
+                    .row
+                        .col-md-4.col-sm-4
+                            img(src='https://placehold.it/350x150').img-responsive
+                            img(src='https://placehold.it/350x150').img-responsive
+                        .col-md-4.col-sm-4
+                            img(src='https://placehold.it/350x150').img-responsive
+                            img(src='https://placehold.it/350x150').img-responsive
+                        .col-md-4.col-sm-4
+                            img(src='https://placehold.it/350x150').img-responsive
+                            img(src='https://placehold.it/350x150').img-responsive
+        #contact.contact-bgd
+            .overlay(style='padding: 150px 0;')
+                .container
+                    .row
+                        .col-md-8
+                            .about.promo-content
+                                h3 Got something interesting?
+                                    | Get in touch:
+                                h3 maciej.oleksa@gmail.com
+                        .col-md-4(style='text-align: center;padding-bottom: 200px;')
+                            a(href='http://freecodecamp.com/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                i.fa.fa-fire
+                                |  FreeCodeCamp
+                            a(href='https://github.com/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                i.fa.fa-github
+                                |  GitHub
+                            a(href='https://pl.linkedin.com/pub/maciej-oleksa/77/710/aba' target='_blank').btn.btn-lg.btn-default.social
+                                i.fa.fa-linkedin
+                                |  LinkedIn
+                            a(href='https://twitter.com/m_ketus' target='_blank').btn.btn-lg.btn-default.social
+                                i.fa.fa-twitter
+                                |  Twitter
+                            a(href='http://www.codewars.com/users/ketus' target='_blank').btn.btn-lg.btn-default.social
+                                i.fa.fa-desktop
+                                |  Code Wars
+    .container-fluid(style="padding: 0px 0px;")
+        .footer
             .row
-               .col-md-3
-                  button.btn.btn-block
-                     a(href='#', target='_blank') Free Code Camp
-               .col-md-3
-                  button.btn.btn-block
-                     a(href='#', target='_blank') Free Code Camp
-               .col-md-3
-                  button.btn.btn-block
-                     a(href='#', target='_blank') Free Code Camp
-               .col-md-3
-                  button.btn.btn-block
-                     a(href='#', target='_blank') Free Code Camp
+                .col-md-6
+                    .lefty
+                .col-md-6
+                    .righty
+                        a(href='#')#scrolltop To Top
+                                            
